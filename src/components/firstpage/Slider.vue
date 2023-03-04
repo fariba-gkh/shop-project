@@ -6,8 +6,8 @@
         </div>
         </div>
         <div class="arrow-container">
-          <i class="arrow-previous" >&#10094;</i>
-          <i class="arow-next" >&#10095;</i>
+          <i class="arrow-previous" @click="previous()">&#10094;</i>
+          <i class="arow-next" @click="next()">&#10095;</i>
         </div> 
       
     </div>
@@ -23,11 +23,23 @@ export default {
        { img :"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg"},
 
       ];
-       
+   
+    
+    function previous(){
+ 
+    };
+
+    function next(){
+    
+    };
+
+    
    
 
       return {
          Images,
+         previous,
+         next,
       }
     }
     
@@ -50,8 +62,7 @@ export default {
 .slider img {
     width: 100vw;
     height: 100%;
-    object-fit: cover;
-    opacity: 0;
+    object-fit: fill;
 }
 
 
