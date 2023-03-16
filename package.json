@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "vite-plugin-require": "^1.1.10",
     "vue": "^3.2.41",
     "vue-router": "^4.1.5"
   },

@@ -1,29 +1,24 @@
-<script setup = "components">
+<script setup="components">
 // import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
 // import {defineComponent} from 'vue';
 // import Navbar from '../src/components/nav/Navbar.vue';
 // import MainPage from '../src/components/firstpage/MainPage.vue'
-import Main from './components/Main.vue'
+import Main from "./components/Main.vue";
 
 // export default defineComponent({
 // comments : {
 // Navbar,
 // }
 // })
-
-
 </script>
 
 <template>
-<Main/>
-<!-- <header>
+  <Main />
+  <!-- <header>
  <Navbar/>
  <MainPage/>
 </header> -->
-
-
-
 
   <!-- <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
@@ -38,19 +33,17 @@ import Main from './components/Main.vue'
     </div>
   </header> -->
 
-<!-- <RouterView /> -->
-  
+  <!-- <RouterView /> -->
 </template>
 
 <style scoped>
-
 * {
   outline: none;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", "sans-serif";
 }
-
 
 /* header {
   line-height: 1.5;

@@ -1,6 +1,6 @@
 <template>
     <div>
-       <Sliderno/> 
+       <Slider/> 
        <AllProducts/>
        <Information/>
        <Footer/>
