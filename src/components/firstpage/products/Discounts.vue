@@ -10,8 +10,12 @@
         </div>
         <div class="off-items">
         <div class="off-item " v-for="(itemDiscount ,id) in discountData[0][1]" :key="id">
+        <span class="off">{{ itemDiscount.off }}</span>
          <img :src="itemDiscount.img" alt="image">
-         <a href="">جزيیات</a>
+         <div class="overlay">
+            <a href="" class="buy-btn">جزيیات</a>
+         </div>
+         
         </div>
         </div>
     </div>
@@ -27,42 +31,52 @@ export default {
             [
             {
                 'id': '0',
-                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg",
+                'off': '22%'
             },
              {
                 'id': '1',
+                'off': '12%',
                 img : "https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg"
             },
              {
                 'id': '2',
+                'off': '22%',
                 img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
             },
              {
                 'id': '3',
+                'off': '10%',
                 img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
             },
               {
                 'id': '4',
+                'off': '8%',
                 img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
             },
               {
                 'id': '5',
+                'off': '5%',
                 img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
             },
               {
                 'id': '6',
+                'off': '11%',
                 img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
             },
               {
                 'id': '7',
+                'off': '23%',
                 img : "https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg"
             },
               {
                 'id': '8',
+                'off': '22%',
                 img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
             },
               {
                 'id': '9',
+                'off': '25%',
                 img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
             }
             ]
@@ -129,23 +143,58 @@ margin-right: 1.5rem;
     align-content: center;
     
 }
+.off{
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    left: 40px;
+    color: rgb(211, 3, 3);
+    font-weight: bolder;
+    
+}
 
 .off-item img {
    width: 100%;
    height: 100%; 
    transition: all 0.1s ease 0.08s;   
 }
-.off-item a {
-color: aliceblue;
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(100, 100, 100, 0.13);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
 }
-.off-item :hover {
-opacity: 0.3;
- 
-}
-.off-item a:hover {
-    color: black;
+.buy-btn {
+color: rgb(255, 255, 255);
+text-decoration: none;
+background-color: rgb(4, 156, 226);
+border-radius: 10%;
+box-shadow: 1px 1px 3px;
+padding: 3px 10px;
+font-size: 16px;
+font-weight: 600;
+top: 0px;
+right: 0px;
+transition: all 0.4s;
+
 }
 
+.buy-btn:hover {
+   color: rgb(59, 59, 59);
+   background-color: rgb(216, 166, 2);
+   box-shadow: 2px 2px 5px;
+}
 
+.off-item:hover .overlay{
+visibility: visible;
+
+}
 
 </style>
