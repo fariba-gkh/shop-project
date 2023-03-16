@@ -31,10 +31,13 @@
           </div>
           <div class="footer-menu">
             <header class="footer-header">دنبال کردن در شبکه های اجتماعی:</header>
-            <ul class="menu-items">
-                <li class="menu-item"><i></i></li>
-                <li class="menu-item"><i></i></li>
-                <li class="menu-item"><i></i></li>
+            <ul class="menu-items items-socoal" >
+                <li class="menu-item"><a href=""><img src="../assets/socialmedia/icons8-facebook.svg" alt=""></a></li>
+                <li class="menu-item"><a href=""><img src="../assets/socialmedia/icons8-instagram.svg" alt=""></a></li>
+                <li class="menu-item"><a href=""><img src="../assets/socialmedia/icons8-linkedin.svg" alt=""></a></li>
+                <li class="menu-item"><a href=""><img src="../assets/socialmedia/icons8-pinterest.svg" alt=""></a></li>
+
+            
             </ul>
           </div>
         </div>
@@ -44,8 +47,30 @@
     </div>
 </template>
 <script>
+// import { reactive } from 'vue';
+
 export default {
     name : 'Footer',
+ 
+setup() {
+   
+
+//     const socialIcons = reactive([{img: require("../assets/socialmedia/icons8-facebook.svg")},
+//     {img: require("../assets/socialmedia/icons8-facebook.svg")},
+//     {img: require("../assets/socialmedia/icons8-facebook.svg")}]) ;
+
+// const getSocialIcon =(name) => {
+//     new URL(`../assets/socialmedia/icon8-${name}.svg` , import.meta.url).href;
+// }
+// console.log(getSocialIcon);
+
+    return {
+    
+    
+    }
+}
+
+
 }
 </script>
 <style>
@@ -75,10 +100,31 @@ export default {
     font-weight: 300;
     margin-top: 10px;
     list-style: none;
+   
+}
+.items-socoal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+.menu-item a img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    
+}
+.menu-item a img:hover {
+    width: 60px;
+    height: 60px; 
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .footer-about-us {
     width: 40%;
     margin-right: 20px ;
     padding-bottom: 30px;
+    
 }
 </style>
