@@ -1,10 +1,10 @@
 <template>
-    <div class="navbar">
+    <!-- <div class="navbar"> -->
      <NavSearchBar/>   
      <NavShop/>
       
         
-    </div>
+    <!-- </div> -->
 </template>
 
 <script>
