@@ -86,8 +86,6 @@ const dataBest = ref([
 
 
 
-
-
 return {
     dataBest,
     

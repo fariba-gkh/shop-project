@@ -1,10 +1,10 @@
 <template>
   <div class="dropdown-container" @click="openList">
     <a href="#">برند</a>
-    <img class="down-icon" src="src/assets/photo/icons8-arrow-24.png" alt="" />
+    <img class="down-icon" src="@/assets/photo/icons8-arrow-24.png" alt="" />
   </div>
   <transition name="brand" appear>
-    <div class="brand-menu" v-if="close" >
+    <div class="brand-menu" v-if="close">
       <div class="item-brand" v-for="(brand, index) in brands" :key="index">
         <a class="name-brand" href="">{{ brand }}</a>
       </div>

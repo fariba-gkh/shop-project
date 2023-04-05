@@ -52,6 +52,7 @@ export default {
   height: 300px;
   top: 60px;
   margin: 50px 0;
+  width: 100vw;
 }
 .carts-inf {
   display: flex;

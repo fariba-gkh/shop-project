@@ -25,7 +25,6 @@
 import { onMounted, ref } from 'vue';
 export default {
     name : 'Slider',
-    // props: ["startAutoPlay" , "timeout" , "navigation" ],
     setup() {
       const Images = [
        {img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"},
@@ -61,7 +60,7 @@ export default {
         next();
       } , 4000)
     };
-
+  
     if(autoPlayEnable.value) {
       autoPlay();
     }
@@ -80,7 +79,7 @@ export default {
          previous,
          next,
          getSlideCount,
-         autoPlay
+         autoPlay,
      
       }
     }
@@ -89,20 +88,19 @@ export default {
 </script>
 <style>
 .slider {
-  width: 100%; 
-
+  width: 100vw; 
+  height: 80vh;
 }
 .sliders {
     display: flex;
     flex-direction: row;
     overflow: hidden; 
-    margin: 1px 0;  
-    height: 80vh;
+    
     position: relative;
     width: 100%;
 }
 .slider img {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     object-fit: fill;
 }

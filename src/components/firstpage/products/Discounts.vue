@@ -115,7 +115,7 @@ export default {
 <style>
 .countent-discounts {
 margin-top: 80px;
-width: 100% ;
+width: 100vw ;
 display: flex;
 flex-direction: column;
 }
@@ -141,7 +141,7 @@ margin-right: 1.5rem;
     margin-top: 1rem;
     justify-content: center;
     align-content: center;
-    
+    width: 100%;
 }
 .off{
     position: absolute;

@@ -1,7 +1,7 @@
 <template>
   <div class="dropdown-acc" @click="openList">
     <a href="#">لوازم جانبی</a>
-    <img class="down-icon" src="src/assets/photo/icons8-arrow-24.png" alt="" />
+    <img class="down-icon" src="@/assets/photo/icons8-arrow-24.png" alt="" />
   </div>
   <transition name="acc">
     <div class="acc-menu" v-if="close" >

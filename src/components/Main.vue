@@ -1,25 +1,22 @@
 <template>
- <div>
-    <header>
- <Navbar/>
-</header>
-<main>
- <MainPage/>
-</main>
- 
- </div>  
-
-
+<Navbar/>
+ <router-view/>
+<Information/>
+<Footer/>
 
 </template>
 <script>
+import { RouterView } from 'vue-router';
 import Navbar from './nav/Navbar.vue';
-import MainPage from './firstpage/MainPage.vue'
+import Information from '../components/firstpage/Information.vue'
+import Footer from '../components/Footer.vue'
 export default {
     name : 'Main',
     components : {
         Navbar ,
-        MainPage
+        Information,
+        Footer,
+        RouterView
     }
 
     
@@ -27,9 +24,16 @@ export default {
 </script>
 <style>
 header {
-  max-height: 100vh;
-  background: white;
-  widows: 100vh;
-  padding:0 20px;
+  /* max-height: 100vh; */
+  /* height: 200px; */
+  /* background: white; */
+   /* padding:0 20px; */
+  /* position: fixed;
+  width: 100%;
+  z-index: 1000; */
+  /* position: fixed;
+  z-index: 100000;
+  width: 100%; */
+
 }
 </style>
