@@ -12,12 +12,12 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: 'shop-project/',
+      path: '/',
       name: 'home',
       component: MainPage 
     },
     {
-      path: 'shop-project/ContactUs',
+      path: '/ContactUs',
       name: 'ContactUs',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -25,22 +25,22 @@ const router = createRouter({
       component: ContactUs
     },
     {
-      path: 'shop-project/aboutUs',
+      path: '/aboutUs',
       name: 'aboutUs',
       component: AboutUs
     },
     {
-      path: 'shop-project/blog',
+      path: '/blog',
       name: 'blog',
       component: Blog
     },
     {
-      path: 'shop-project/service',
+      path: '/service',
       name: 'service',
       component: Service
     },
     {
-      path: 'shop-project/ProductProperty/:id',
+      path: '/ProductProperty/:id',
       name: 'ProductProperty',
       component: ProductProperty
     }
