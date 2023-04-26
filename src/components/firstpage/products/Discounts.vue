@@ -13,7 +13,7 @@
         <span class="off">{{ itemDiscount.off }}</span>
          <img :src="itemDiscount.img" alt="image">
          <div class="overlay">
-            <a href="" class="buy-btn">جزيیات</a>
+            <router-link :to="{name:'ProductProperty', params:{id: itemDiscount.id}}" href="" class="buy-btn">جزيیات</router-link>
          </div>
          
         </div>
@@ -21,63 +21,183 @@
     </div>
 </template>
 <script>
-import {ref} from 'vue';
+import {reactive} from 'vue';
 export default {
     name: 'Discounts',
     setup() {
-       const discountData = ref([
+       const discountData = reactive([
       [
             'HONDA',
             [
             {
                 'id': '0',
                 img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg",
-                'off': '22%'
+                'off': '22%',
+                'Amps': 'فشار روغن',
+                'color': 'مشکی',
+                'brand': 'کویر',
+                'EnginClass': 'street',
+                'TypeLamp': 'ال ای دی',
+                'RadiatorType': 'بدون رادیاتور',
+                imgs:{
+                    img1:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img2:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img3:"https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                }
+
             },
              {
                 'id': '1',
                 'off': '12%',
-                img : "https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg"
+                img : "https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                'Amps': 'فشار روغن',
+                'color': 'مشکی',
+                'brand': 'کویر',
+                'EnginClass': 'street',
+                'TypeLamp': 'ال ای دی',
+                'RadiatorType': 'بدون رادیاتور',
+                imgs:{
+                    img1:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img2:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img3:"https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                }
+
             },
              {
                 'id': '2',
                 'off': '22%',
-                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg",
+                'Amps': 'فشار روغن',
+                'color': 'جگری',
+                'brand': 'کویر',
+                'EnginClass': 'street',
+                'TypeLamp': 'ال ای دی',
+                'RadiatorType': 'بدون رادیاتور',
+                imgs:{
+                    img1:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img2:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img3:"https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                }
+
             },
              {
                 'id': '3',
                 'off': '10%',
-                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg",
+                'Amps': 'فشار روغن',
+                'color': 'بژ',
+                'brand': 'کویر',
+                'EnginClass': 'street',
+                'TypeLamp': 'ال ای دی',
+                'RadiatorType': 'بدون رادیاتور',
+                imgs:{
+                    img1:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img2:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img3:"https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                }
+
             },
               {
                 'id': '4',
                 'off': '8%',
-                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg",
+                'Amps': 'فشار روغن',
+                'color': 'سفید',
+                'brand': 'کویر',
+                'EnginClass': 'street',
+                'TypeLamp': 'ال ای دی',
+                'RadiatorType': 'بدون رادیاتور',
+                imgs:{
+                    img1:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img2:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img3:"https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                }
+
             },
               {
                 'id': '5',
                 'off': '5%',
-                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg",
+                'Amps': 'فشار روغن',
+                'color': 'طوسی',
+                'brand': 'کویر',
+                'EnginClass': 'street',
+                'TypeLamp': 'ال ای دی',
+                'RadiatorType': 'بدون رادیاتور',
+                imgs:{
+                    img1:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img2:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img3:"https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                }
+
             },
               {
                 'id': '6',
                 'off': '11%',
-                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg",
+                'Amps': 'فشار روغن',
+                'color': 'نارنجی',
+                'brand': 'کویر',
+                'EnginClass': 'street',
+                'TypeLamp': 'ال ای دی',
+                'RadiatorType': 'بدون رادیاتور',
+                imgs:{
+                    img1:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img2:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img3:"https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                }
+
             },
               {
                 'id': '7',
                 'off': '23%',
-                img : "https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg"
+                img : "https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                'Amps': 'فشار روغن',
+                'color': 'آبی',
+                'brand': 'کویر',
+                'EnginClass': 'street',
+                'TypeLamp': 'ال ای دی',
+                'RadiatorType': 'بدون رادیاتور',
+                imgs:{
+                    img1:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img2:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img3:"https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                }
+
             },
               {
                 'id': '8',
                 'off': '22%',
-                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg",
+                'Amps': 'فشار روغن',
+                'color': 'فرمز',
+                'brand': 'کویر',
+                'EnginClass': 'street',
+                'TypeLamp': 'ال ای دی',
+                'RadiatorType': 'بدون رادیاتور',
+                imgs:{
+                    img1:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img2:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img3:"https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                }
+
             },
               {
                 'id': '9',
                 'off': '25%',
-                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                img : "https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg",
+                'Amps': 'فشار روغن',
+                'color': 'زرد',
+                'brand': 'کویر',
+                'EnginClass': 'street',
+                'TypeLamp': 'ال ای دی',
+                'RadiatorType': 'بدون رادیاتور',
+                imgs:{
+                    img1:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img2:"https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg",
+                    img3:"https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg"
+                }
+
             }
             ]
         ],

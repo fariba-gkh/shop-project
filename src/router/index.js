@@ -4,7 +4,8 @@ import MainPage from '@/components/firstpage/MainPage.vue';
 import ContactUs from '@/components/menu/contactUs/ContactUs.vue';
 import AboutUs from '@/components/menu/aboutUs/AboutUs.vue';
 import Blog from '@/components/menu/blog/Blog.vue';
-import Service from '@/components/menu/service/Service.vue'
+import Service from '@/components/menu/service/Service.vue';
+import ProductProperty from '@/components/property/ProductProperty.vue';
 
 
 const router = createRouter({
@@ -37,6 +38,11 @@ const router = createRouter({
       path: '/service',
       name: 'service',
       component: Service
+    },
+    {
+      path: '/ProductProperty/:id',
+      name: 'ProductProperty',
+      component: ProductProperty
     }
   ]
 })

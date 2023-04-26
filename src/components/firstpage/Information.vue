@@ -49,18 +49,19 @@ export default {
 <style>
 .container-inf {
   background: rgba(185, 185, 185, 0.527);
-  height: 300px;
   top: 60px;
   margin: 50px 0;
-  width: 100vw;
+  max-width: 100vw;
 }
 .carts-inf {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 30px;
   height: 100%;
+  padding: 2.5rem 0;
 }
 .cart-inf {
   background-image: linear-gradient(

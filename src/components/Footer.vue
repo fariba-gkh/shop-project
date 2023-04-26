@@ -85,6 +85,7 @@ setup() {
 }
 .footer-menus {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px ;

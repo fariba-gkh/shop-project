@@ -48,8 +48,8 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 500px;
-  width: 1250px;
+ height: 500px;
+  max-width: 1250px;
   margin: 80px 80px 0px 80px;
 
 }
