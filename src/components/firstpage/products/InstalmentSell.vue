@@ -7,7 +7,6 @@
           <img src="@/assets/photo/cubi/beautiful-biker-girl-wearing-black-leather-jacket-leaning-her-superbike-outside-building.jpg" alt="" />
         </div>
         <div class="right">
-          <!-- <img src="https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg" alt="" /> -->
           <img src="@/assets/photo/cubi/close-up-motorcyclist-with-helmet.jpg" alt="" />
         </div>
         <div class="back" >
@@ -26,20 +25,13 @@
 
 </template>
 <script>
-import { ref } from 'vue';
 export default {
   name: "InstalmentSell",
 
   setup() {
 
    
-    // const dataInastalment = {
-    //   img: "https://img.freepik.com/premium-psd/road-bike-transparent-background-3d-rendering-illustration_494250-30842.jpg?auto=format&h=200",
-    // };
    
-    return {
-   
-    };
   },
 };
 </script>
@@ -48,19 +40,15 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- height: 500px;
+  height: 500px;
   max-width: 1250px;
   margin: 80px 80px 0px 80px;
 
 }
 .cube {
-  /* background-color: aqua;   */
-  /* border: 1px solid rgb(153, 51, 51); */
   width: 625px;
   height: 500px;
-  /* position: relative; */
   perspective: 800px;
-  /* transform-origin: 50%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,10 +57,7 @@ export default {
   width: 300px;
   height:300px;
   
-  /* background-color: rgb(255, 251, 0); */
-  /* transform: perspective(800px) rotateX(270px) rotate(0deg) translateZ(180deg); */
   transform-style: preserve-3d;
-  /* position: relative; */
   transform: rotateY(45deg);
   animation: spin 10s linear infinite;
 
@@ -110,7 +95,6 @@ export default {
 .instalment-content {
   width: 50%;
   text-align: center;
-  /* background-color:rgb(192, 135, 248) ; */
 }
 .instalment-content h1 {
   margin-top: 25%;
@@ -130,5 +114,55 @@ export default {
   color: rgb(73, 73, 73);
 }
 
+
+
+@media (max-width: 500px) {
+  .instalment-container{
+    flex-direction: column;
+  }
+  .instalment-content {
+    width: 100%;
+  }
+  .instalment-content h1{
+     font-size: 1rem;
+
+  }
+  .cube {
+    width: 100%;
+  }
+  .btn-buy {
+  padding: 10px 30px;
+  font-size: 12px;
+  margin-top: 20px;
+ 
+}
+  .instalment-img{
+    width: 200px;
+    height:200px;
+  
+  }
+  .instalment-img div {
+  width: 200px;
+  height: 200px;
+}
+.instalment-img div img{
+  width:200px;
+  height: 200px;
+  
+}
+ .front {
+  transform: translateZ(100px)  ;
+}
+.right {
+  transform: rotateY(-270deg) translateZ(100px);
+}
+.back{
+  transform: rotateY(180deg) translateZ(100px) ;
+
+}
+.left {
+  transform: rotateY(90deg) translateZ(-100px);
+}
+}
 
 </style>

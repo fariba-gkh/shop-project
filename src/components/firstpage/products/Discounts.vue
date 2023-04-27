@@ -317,4 +317,18 @@ visibility: visible;
 
 }
 
+/* ----------------responsive----------------- */
+@media (max-width: 500px) {
+    .off-items{
+        display: flex;
+        flex-direction: column;
+    } 
+    .brands-off{
+        display: grid;
+        grid-template-columns: repeat(3, 0);
+        grid-template-columns: repeat(3, 33%);
+        gap: 0.4rem;
+    }
+}
+
 </style>

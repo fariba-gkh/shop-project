@@ -47,7 +47,7 @@
     </div>
 </template>
 <script>
-// import { reactive } from 'vue';
+
 
 export default {
     name : 'Footer',
@@ -55,14 +55,7 @@ export default {
 setup() {
    
 
-//     const socialIcons = reactive([{img: require("../assets/socialmedia/icons8-facebook.svg")},
-//     {img: require("../assets/socialmedia/icons8-facebook.svg")},
-//     {img: require("../assets/socialmedia/icons8-facebook.svg")}]) ;
 
-// const getSocialIcon =(name) => {
-//     new URL(`../assets/socialmedia/icon8-${name}.svg` , import.meta.url).href;
-// }
-// console.log(getSocialIcon);
 
     return {
     
@@ -123,9 +116,22 @@ setup() {
     margin-right: 10px;
 }
 .footer-about-us {
-    width: 40%;
-    margin-right: 20px ;
-    padding-bottom: 30px;
+    width: 50%;
+    padding: 1rem;
+    text-align: justify;
     
+}
+
+@media (max-width: 500px) {
+    .footer-contact {
+       padding: 5px 0px;
+       text-align: center;
+
+}
+    .footer-about-us{
+        width: 100%; 
+
+    }
+   
 }
 </style>
