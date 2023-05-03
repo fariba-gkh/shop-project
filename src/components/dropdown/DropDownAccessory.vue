@@ -88,4 +88,17 @@ export default {
 .acc-leave-to {
   opacity: 0;
 }
+
+
+@media (max-width: 500px) {
+  .acc-menu {
+  position: relative;
+  background-color:  rgb(241, 241, 241);
+  padding: 5px 20px;
+  top: 10px;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+}
 </style>

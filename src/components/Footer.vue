@@ -8,7 +8,7 @@
             <header class="footer-header">اطلاعات:</header>
             <ul class="menu-items">
                 <li class="menu-item">درباره ما</li>
-                <li class="menu-item">مدرک صد.ر سند</li>
+                <li class="menu-item">مدرک صدور سند</li>
                 <li class="menu-item">گارانتی موتور سیکلت</li>
             </ul>
           </div>
@@ -112,7 +112,7 @@ setup() {
 .menu-item a img:hover {
     width: 60px;
     height: 60px; 
-    margin-left: 10px;
+    margin-left: 10px; 
     margin-right: 10px;
 }
 .footer-about-us {

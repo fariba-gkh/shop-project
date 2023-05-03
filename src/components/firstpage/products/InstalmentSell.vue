@@ -4,16 +4,16 @@
       <div class="cube">
       <div class="instalment-img">
         <div class="front">
-          <img src="@/assets/photo/cubi/beautiful-biker-girl-wearing-black-leather-jacket-leaning-her-superbike-outside-building.jpg" alt="" />
+          <img src="https://bikes.motobank.co.uk/storage/indian/challenger-elite-1192/h/challenger-elite-1192-hero.jpg" alt="" />
         </div>
         <div class="right">
-          <img src="@/assets/photo/cubi/close-up-motorcyclist-with-helmet.jpg" alt="" />
+          <img src="https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg" alt="" />
         </div>
         <div class="back" >
-          <img src="@/assets/photo/cubi/person-taking-driver-s-license-exam.jpg" alt="" />
+          <img src="https://cdn.britannica.com/16/126516-050-2D2DB8AC/Triumph-Rocket-III-motorcycle-2005.jpg" alt="" />
         </div>
         <div class="left">
-          <img src="@/assets/photo/cubi/red-motor-biking-road.jpg" alt="" />
+          <img src="https://www.suzuki.ca/wp-content/uploads/2022-Hayabusa-Right.jpg" alt="" />
         </div>
       </div>
       </div>
@@ -56,7 +56,6 @@ export default {
 .instalment-img {
   width: 300px;
   height:300px;
-  
   transform-style: preserve-3d;
   transform: rotateY(45deg);
   animation: spin 10s linear infinite;
@@ -71,12 +70,11 @@ export default {
   position: absolute;
   width: 300px;
   height: 300px;
-  box-shadow: 0px 7px 15px rgb(121, 121, 121);
 }
 .instalment-img div img{
   width:300px;
   height: 300px;
-  object-fit: cover;
+  object-fit: fill;
   
 }
 .front {

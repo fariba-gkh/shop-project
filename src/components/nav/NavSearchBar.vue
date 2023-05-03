@@ -147,5 +147,45 @@ font-weight: bold;
 span {
     font-size: 15px;
     margin-top: 0;
+    
+}
+
+
+@media (max-width:500px) {
+
+.nav-search-bar {
+height: 61px;
+padding:0 5px;
+flex-wrap: nowrap;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding:0 10px;
+}
+.register {
+ display: flex;
+ margin-right: 10px;
+
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+.logo span {
+    font-size: 12px;
+}
+.input-search {
+    height: 0;
+    width: 0;
+    padding: 0; 
+    border: none; 
+}
+
+.register a{
+font-size: 8px;
+padding:5px 5px;
+}
 }
 </style>

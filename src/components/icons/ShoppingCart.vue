@@ -6,5 +6,12 @@
     svg {
     color: rgb(255, 174, 0);
 }
-</style>>
+
+@media (max-width:500px) {
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+</style>
 

@@ -81,4 +81,16 @@ export default {
 .brand-leave-to {
   opacity: 0;
 }
+
+@media (max-width: 500px) {
+  .brand-menu {
+  background-color: rgb(241, 241, 241);
+  position: relative;
+  z-index: 1000;
+  top: 10px;
+  width: 100%;
+  padding: 15px 20px;
+  border:none;
+}
+}
 </style>
