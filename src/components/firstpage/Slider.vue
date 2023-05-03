@@ -116,9 +116,7 @@ export default {
   gap: 30px;
 
 }
-.nav {
 
-}
 .nav i {
   background: rgb(80, 80, 80);
   padding: 8px 13px;
@@ -156,5 +154,32 @@ export default {
 
 .active {
   background-color: rgb(240, 169, 17);
+}
+
+
+@media (max-width: 500px) {
+  .slider {
+  width: 100vw; 
+  height: 55vh;
+}
+.navigation {
+  bottom: 8%;
+  gap: 15px;
+
+}
+.pagi {
+    width: 7px;
+    height: 7px;
+  }
+  .nav i {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+
+}
+.pagination {
+  bottom: 10px;
+  gap: 10px;
+}
+
 }
 </style>
